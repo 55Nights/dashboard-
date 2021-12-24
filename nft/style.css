@@ -1,0 +1,86 @@
+:root{
+    --bg:hsl(217, 54%, 11%);
+    --cardBg:hsl(216, 50%, 16%);
+    --line:hsl(215, 32%, 27%);
+    --font:'Outfit';
+    --fontsize:18px;
+    --Cyan:hsl(178, 100%, 50%);
+    --Softblue: hsl(215, 51%, 70%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    color: white;
+}
+/*wrap_content*/
+body{
+    background-color: var(--bg);
+   align-items: center;
+
+}
+/*card css*/
+.nft_card{
+    position: relative;
+   left: 30%;
+   top: 5em;
+   border-radius: 1em;
+    background-color: var(--cardBg);
+    width: 25%;
+    height: 80vh;
+    padding: 1em;
+    box-shadow: 0 5px 5px 0 hsl(215, 51%, 17%); ;
+}
+.equilibrium{
+    position: relative;
+    width: 100%;
+    background-image: url(./assets/image-equilibrium.jpg);
+    padding: 10em;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+h4{
+    font-size:var(--fontsize);
+    margin-bottom: 1em;
+}
+p{
+    font-weight: 300;
+    color: var(--Softblue);
+}
+h6{
+    font-size: 16px;
+    color: var(--Cyan);
+    padding-bottom: 2em;
+}
+.eth{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--line);
+}
+.card_footer{
+    position: relative;
+    top: 1em;
+    width: 100%;
+    display: flex;  
+    margin-top: 1em;
+}
+/*mobile*/
+@media only screen and (max-width: 1400px) {
+   
+    .nft_card{
+        
+        width: 80%;
+        position: relative;
+        top: 3em;
+        left: 3em;
+        
+       
+    }
+  }
