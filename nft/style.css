@@ -72,14 +72,15 @@ h6{
     margin-top: 1em;
 }
 /*mobile*/
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 900px) {
    
     .nft_card{
         
-        width: 80%;
+        width: 100%;
         position: relative;
-        top: 3em;
-        left: 3em;
+       left: 0;
+       top: 0;
+       padding: 0;
         
        
     }
